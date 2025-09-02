@@ -1,0 +1,22 @@
+<div class="col-12 d-flex justify-content-center align-items-center" style="height: 70dvh;">
+<div class="col-12 col-sm-10 col-md-8 col-lg-5 rounded border shadow-sm p-4 bg-white">
+    <div class="col-12 text-center">
+        <h4>
+            <span class="color-purple">Strong</span><span class="color-orange">Memory</span>
+        </h4>
+    </div>
+    <hr/>
+    <div class="col-12 text-center">
+        <span class="h6">Escolha a Dificuldade:</span>
+        <select [(ngModel)]="difficulty" class="form-select text-center mt-2 shadow-sm">
+            <option selected value="facil">Fácil</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="dificil">Difícil</option>
+        </select>
+    </div>
+    <hr/>
+    <div class="col-12 text-center">
+        <button class="btn-gradient-purple-orange" (click)="startGame()">Iniciar</button>
+    </div>
+</div>
+</div>

@@ -1,0 +1,31 @@
+<div class="col-12 my-4">
+  <h3 class="text-start">Em ordem, quais palavras estavam na lista?</h3>
+
+  <form [formGroup]="words" (ngSubmit)="onSubmit()">
+    <hr />
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2">
+      @for (key of words.controls | keyvalue; track key.key; let i = $index) {
+        <div class="col">
+            <input
+                type="text"
+                class="form-control input-word"
+                [id]="'palavra-' + i"
+                [placeholder]="'Digite a ' + (i + 1) + 'ª palavra...'"
+                [formControlName]="key.key"
+            />
+        </div>
+     }
+    </div>
+
+    <hr />
+
+    <div class="text-end">
+      @if (words.valid) {
+        <button type="submit" class="btn-gradient-purple-orange">
+          Verificar
+        </button>
+      }
+    </div>
+  </form>
+</div>

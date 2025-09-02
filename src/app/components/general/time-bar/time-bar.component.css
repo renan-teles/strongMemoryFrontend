@@ -1,0 +1,7 @@
+.progress-bar {
+  transition: none;
+}
+
+.progress-bar.descreasing {
+  transition: width 1s linear, background-color 0.5s ease;
+}

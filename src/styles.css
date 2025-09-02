@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --purple: #9c04fc;
+  --orange: #ffab40;
+  --gradientpurpleorange: linear-gradient(120deg, #9c04fc 0%, #ffab40 100%);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.btn-gradient-purple-orange {
+  background: var(--gradientpurpleorange);
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.color-purple {
+  color: var(--purple);
+}
+
+.color-orange {
+  color: var(--orange);
+}

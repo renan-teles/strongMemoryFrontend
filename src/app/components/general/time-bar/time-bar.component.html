@@ -1,0 +1,16 @@
+<div class="col-12 my-4">
+  <div class="progress">
+    <div
+      class="progress-bar"
+      role="progressbar"
+      [class.decreasing]="decreasing"
+      [style.width.%]="percent$ | async"
+      [ngClass]="(color$ | async)!"
+      [attr.aria-valuenow]="timeRemaining$"
+      aria-valuemin="0"
+      [attr.aria-valuemax]="totalTime"
+    >
+      {{ timeRemaining$ | async }}s
+    </div>
+  </div>
+</div>
