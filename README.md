@@ -1,5 +1,5 @@
 # StrongMemoryFrontend
-O StrongMemoryFrontend é o frontend de uma aplicação web em Angular, projetada para exercitar e fortalecer a memória e o foco dos usuários.
+Desenvolvido em Angular, o StrongMemoryFrontend é o frontend de uma aplicação web projetada para exercitar e fortalecer a memória e o foco de seus usuários.
 <!--
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.1.
 
